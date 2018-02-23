@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
 class Square extends React.Component {
   render() {
     return (
@@ -10,7 +14,7 @@ class Square extends React.Component {
 
 class Board extends React.Component {
   renderSquare(i) {
-    return <Square />
+    return <Square value={i} />;
   }
 
   render() {
@@ -48,7 +52,7 @@ class Game extends React.Component {
         </div>
         <div className="game-info">
           <div>{/*status*/}</div>
-          <ol>{/*TODO*/}</dol>
+          <ol>{/*TODO*/}</ol>
         </div>
       </div>
     );
